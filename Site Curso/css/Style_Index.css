@@ -1,0 +1,724 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/*Estilo do Container*/
+
+.Container{
+    background-color: white;
+
+    width: 100vw;
+    height: 500vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/*Estilo da NavBar*/
+
+.NavBar{
+    width: 100vw;
+    height: 13vh;
+
+    background-color: #1371be;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Estilo da Logo da NavBar*/
+
+.NavBar_Logo{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Estilo da Logo da NavBar*/
+
+#NavBar_Logo_P{
+    font-size: 2rem;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+/*Estilo dos Links da NavBar*/
+
+.NavBar_Links{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*Estilo dos Links da NavBar NavBar*/
+
+.NavBar_Links ul{
+    display: flex;
+    list-style: none;
+    width: 57%;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    color: white;
+}
+.NavBar_Links ul a{
+    text-decoration: none;
+    color: white;
+}
+.NavBar_Links_Btn{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#Logar{
+    height: 31px;
+    display: flex;
+    width: 87px;
+    border: 1px solid white;
+    border-radius: 32px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #1371be;
+    text-decoration: none;
+}
+#Cadastrar{
+    height: 31px;
+    display: flex;
+    width: 117px;
+    border: 1px solid white;
+    border-radius: 32px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.Apresentacao{
+    background-image: url(https://cursos.dankicode.com/app/Views/public/images/home/banner-home.png);
+    width: 100%;
+    height: 15%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Apresentacao_P1{
+    font-size: 2rem;
+    color: white;
+}
+#Apresentacao_P1_2{
+    font-size: 4rem;
+    color: white;
+}
+#Apresentacao_P2{
+    font-size: 2rem;
+    color: white;
+}
+
+#Apresentacao_Btn{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    width: 21%;
+    height: 8%;
+    color: #e7426b;
+    border: 1px solid #e7426b;
+    border-radius: 40px;
+}
+
+.Differentials{
+    width: 100%;
+    height: 18%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Differentials_Box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Differentials_Box_D{
+    width: 20%;
+    height: 100%;
+    background-color: white;
+}
+
+.Differentials_Box_D{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Differentials_Box_Sub1, .Differentials_Box_Sub2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.Differentials_Box_D_Sub_D{
+    width: 67%;
+    height: 88%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    text-align: center;
+
+    font-size: 1.5rem;
+
+    font-weight: lighter;
+    color: #1A91A8;
+}
+
+.Differentials_Box_D_Sub_D object{
+    width: 100%;
+    height: 30%;
+}
+
+
+.BFR_Cursos{
+    font-size: 1.4rem;
+    width: 100%;
+    background-color: #1371be;
+    height: 4%;
+    text-align: center;
+    color: white;
+    
+}
+
+#BFR_Cursos_P1{
+    font-size: 1.6rem;
+    font-weight: 900;
+    padding-top: 2%;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: -1px;
+}
+#BFR_Cursos_P2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.Cursos{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 40%;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.Cursos_Center{
+    display: flex;
+
+
+    width: 80%;
+    height: 92%;
+
+
+    flex-wrap: wrap;
+}
+.NavBar_Icon{
+    display: none;
+}
+.Cursos_Categoria{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+.Cursos_Categoria_Box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 72%;
+    height: 70%;
+
+    padding-left: 2.7%;
+}
+
+.Cursos_Categoria_Box_Parte1{
+    display: flex;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(66, 126, 128);
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+.Cursos_Categoria_Box_Parte2{
+    width: 35%;
+    height: 39%;
+    background-color: rgba(95, 158, 160, 0.074);
+}
+.fa-solid fa-desktop{
+    font-size: 2rem;
+}
+
+.Cursos_Categoria_Box_Parte1_Sub{
+    height: 100%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Cursos_Categoria_Box_Parte1_Sub p{
+    font-size: 1.5rem;
+}
+
+.Cursos_Categoria_Box_Parte2{
+    color: rgba(128, 128, 128, 0.918);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+.Cursos_Categoria_Box_Parte2_Sub{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.Cursos_Box{
+
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+
+}
+
+.Cursos_Box_C{
+    width: 26%;
+    height: 38%;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid #ccc;
+}
+.Cursos_Box_C_Logo{
+    height: 40%;
+    width: 100%;
+}
+
+.Cursos_Box_C_Logo img{
+    width: 100%;
+    height: 100%;
+}
+.Cursos_Box_C_Sub{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.Cursos_Box_C_Sub span{
+    color: rgba(128, 128, 128, 0.352);
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.Cursos_Box_C_Sub_Star{
+    display: flex;
+    padding-left: 6%;
+    width: 100%;
+    height: 10%;
+}
+.Cursos_Box_C_Link{
+    width: 100%;
+    height: 13%;
+    background-color: #1371be;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+}
+.Cursos_Box_C_Link a{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.Cursos_Box_C_Sub_Info{
+    width: 100%;
+    display: flex;
+    height: 87%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.Cursos_Box_C_Sub_Info p:nth-child(1){
+    font-size: 1.2rem;
+}
+.Cursos_Box_C_Sub_Info p:nth-child(2){
+    font-size: 1.1rem;
+}
+
+.PSAP{
+    width: 100%;
+    height: 8%;
+    background-color: #9db9d1;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.PSAP_Sub{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.PSAP_Sub img{
+    width: 25%;
+    height: 48%;
+    padding: 10px;
+}
+.LIVIP{
+    width: 100%;
+    height: 6%;
+    background-color: #1371be;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.LIVIP_Sub{
+    font-size: 1rem;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.LIVIP_Sub_Form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 40%;
+    justify-content: center;
+}
+.LIVIP_Sub_Form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+#LIVIP_Sub_Form_Input_1{
+    height: 40%;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    background-color: white;
+}
+#LIVIP_Sub_Form_Input_2{
+    height: 47%;
+    letter-spacing: -.4px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #e7426b;
+}
+
+.Footer{
+    width: 100%;
+    height: 15%;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer_Sub{
+    width: 100%;
+    height: 88%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(46, 68, 147);
+}
+
+
+.Footer_Sub2{
+    width: 100%;
+    height: 12%;
+    text-align: center;
+    background-color: #1371be;
+}
+.Footer_Sub_Sub1{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Footer_Sub_Sub1_Section_1{
+    width: 30%;
+    height: auto;
+    color: white;
+}
+
+.Footer_Sub_Sub1_Section_1_Icons{
+    color: white;
+    padding-top: 10px;
+}
+.Footer_Sub_Sub1_Section_2{
+    height: 50%;
+    width: 30%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Footer_Sub_Sub1_Section_1 i{
+    color: white;
+    padding-right: 5px;
+}
+.Footer_Sub_Sub1_Section_2 i{
+    color: white;
+}
+.Footer_Sub_Sub1_Section_2 b{
+    padding-left: 4px;
+}
+.Footer_Sub_Sub1 h1{
+    text-align: center;
+}
+.Footer_Sub_Sub1 p{
+    font-size: 1.2rem;
+} 
+
+#NavMobile{
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+
+}
+.Footer_Sub2 h1{
+    font-weight: 200;
+}
+@media (max-width:768px) {
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        overflow-x: hidden;
+    }
+    .Container{
+    
+        width: 100vw;
+        height: 500vh;
+    
+        display: flex;
+        flex-direction: column;
+    }
+    .Cursos_Box_C {
+        width: 28%;
+        height: 44%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ccc;
+    }
+    .NavBar_Links {
+        display: none;
+    }
+    .NavBar_Icon{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        
+    }
+    .NavBar_Icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer ;
+    }
+    .NavBar_Icon i{
+        color: rgb(255, 255, 255);
+    }
+    #NavMobile.activ2{
+        width: 100%;
+        display: block;
+        transition: 1s;
+        height: 15%;
+        opacity: 1;
+        transition: opacity .5s linear;
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #NavMobile.activ2 ul {
+        font-size: 1.5rem;
+        width: 100%;
+        padding: 0;
+        transition: 1s;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+    }
+    #NavMobile.activ2 ul a{
+        text-decoration: none;
+        color: #1371be;
+    }
+    #Apresentacao_Btn {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+        width: 21%;
+        height: 8%;
+        color: #e7426b;
+        border: 1px solid #e7426b;
+        border-radius: 40px;
+    }
+    .Differentials_Box_D_Sub_D {
+        width: 67%;
+        height: 88%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: lighter;
+        color: #1A91A8;
+    }
+    .Differentials_Box_Sub1, .Differentials_Box_Sub2 {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .BFR_Cursos {
+        font-size: 1.1rem;
+        width: 100%;
+        background-color: #1371be;
+        height: 4%;
+        text-align: center;
+        color: white;
+    }
+    .Cursos_Categoria_Box_Parte1_Sub p {
+        font-size: 0.9rem;
+    }
+    .Cursos_Categoria_Box_Parte2_Sub {
+        height: 100%;
+        width: 80%;
+        font-size: 0.7rem;
+        display: flex;
+        align-items: center;
+    }
+    .Cursos_Center {
+        display: flex;
+        width: 80%;
+        height: 92%;
+        overflow: auto;
+        flex-wrap: wrap;
+    }
+    .Cursos_Box_C {
+        width: 89%;
+        height: 44%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ccc;
+    }
+    .PSAP_Sub img {
+        width: 71%;
+        height: 48%;
+        padding: 10px;
+    }
+    .LIVIP_Sub h1{
+        font-size: 1rem;
+    }
+    #LIVIP_Sub_Form_Input_1 {
+        height: 40%;
+        border: 1px solid #ccc;
+        padding-left: 10px;
+        font-size: 0.5rem;
+        background-color: white;
+    }
+    .Footer_Sub_Sub1 p {
+        font-size: 0.6rem;
+    }
+    .Footer_Sub_Sub1 h1 {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .Footer_Sub_Sub1_Section_1_Icons {
+        color: white;
+        padding-top: 37px;
+        display: flex;
+    }
+    .Footer_Sub_Sub1 h1 {
+        text-align: center;
+        font-size: 1rem;
+    }
+}
